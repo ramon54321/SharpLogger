@@ -2,7 +2,7 @@
 
 namespace SharpLogger
 {
-    public static class SharpLogger
+    public static class Logger
     {
         private static Printer _printer = null;
         private static LogLevel _level = LogLevel.L0_Trace;
@@ -31,15 +31,13 @@ namespace SharpLogger
          */
         public static void Log(LogLevel level, string message, string filter = "General")
         {
-            // TODO: Implement Log Logic
-
             if (_printer == null)
                 return;
 
             if (level < _level)
                 return;
 
-            if (!message.StartsWith(_filter, StringComparison.CurrentCultureIgnoreCase))
+            if (!filter.StartsWith(_filter, StringComparison.CurrentCultureIgnoreCase))
                 return;
 
             _printer.Print(message);
