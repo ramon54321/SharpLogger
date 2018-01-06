@@ -4,9 +4,9 @@ namespace SharpLogger
 {
     public static class SharpLogger
     {
-        private static Printer _printer;
-        private static LogLevel _level;
-        private static string _filter;
+        private static Printer _printer = null;
+        private static LogLevel _level = LogLevel.L0_Trace;
+        private static string _filter = "General";
 
         /**
          * Setters used to set the behaviour parameters of the logger.
@@ -32,6 +32,18 @@ namespace SharpLogger
         public static void Log(LogLevel level, string message, string filter = "General")
         {
             // TODO: Implement Log Logic
+
+            if (_printer == null)
+                return;
+
+            if (level < _level)
+                return;
+
+            if (!message.StartsWith(_filter, StringComparison.CurrentCultureIgnoreCase))
+                return;
+
+            _printer.Print(message);
+
         }
     }
 }
