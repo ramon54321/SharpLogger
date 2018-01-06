@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SharpLogger
+﻿namespace SharpLogger
 {
     public enum LogLevel
     {
