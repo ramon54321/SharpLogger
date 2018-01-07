@@ -23,6 +23,10 @@ namespace SharpLogger
         {
             _filter = filter;
         }
+        public static void ResetFilter()
+        {
+            _filter = "General";
+        }
 
         /**
          * This method is called by the user to log a message.
