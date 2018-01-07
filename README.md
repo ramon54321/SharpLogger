@@ -13,7 +13,7 @@ This also means you can use SharpLogger on slightly different environments, sinc
 
 ## Diagrams
 #### Component Diagram
-![Component Diagram](https://lh5.googleusercontent.com/xwT-yAeczSbmKq7tCMt7TG-5Ua-8QO0-ibcQWzndHzs8Zvkjw-71QdsU2oaXaymhxfkpLTFdr1UFWX8atmNP=w2560-h1476)
+![Component Diagram](http://repo.ramonbrand.ml/images/SharpLogger/ComponentDiagram.jpg)
 
 #### Class Diagram
-![Class Diagram](https://lh5.googleusercontent.com/uMB2GtxeB3O7I_NFA-IlMmFEIG64lsqiXnPqiR0rU1Cn0f-vJMKDDrdc9qm8MDiRhx7EfAPo1M27_szTuanz=w2560-h1476)
+![Class Diagram](http://repo.ramonbrand.ml/images/SharpLogger/ClassDiagram.jpg)
