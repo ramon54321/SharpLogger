@@ -1,6 +1,9 @@
 # SharpLogger
 A custom logging system for .NET Core 2.0, written in C#, which allows levels and filtering, with an independent output implementation.
 
+## Getting Started
+View the [examples](https://github.com/ramon54321/SharpLogger/tree/master/examples) page for information on a various logger setups.
+
 ## Overview
 SharpLogger attempts to push you away from being stingy with what you log. I believe that it is valuable to log many things in your code, however, this often turns into a mess, when you have a cluttered log file with information regarding objects you are no longer interested in, or are not currently concerned with.
 
