@@ -11,22 +11,10 @@ namespace SharpLogger
         /**
          * Setters used to set the behaviour parameters of the logger.
          */
-        public static void SetPrinter(Printer printer)
-        {
-            _printer = printer;
-        }
-        public static void SetLevel(LogLevel level)
-        {
-            _level = level;
-        }
-        public static void SetFilter(string filter)
-        {
-            _filter = filter;
-        }
-        public static void ResetFilter()
-        {
-            _filter = "General";
-        }
+        public static void SetPrinter(Printer printer) => _printer = printer;
+        public static void SetLevel(LogLevel level) => _level = level;
+        public static void SetFilter(string filter) => _filter = filter;
+        public static void ResetFilter() => _filter = "General";
 
         /**
          * This method is called by the user to log a message.
