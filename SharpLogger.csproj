@@ -12,8 +12,21 @@
 
   <ItemGroup>
     <Compile Remove="examples\**" />
+    <Compile Remove="icon\**" />
+    <Compile Remove="lib\**" />
     <EmbeddedResource Remove="examples\**" />
+    <EmbeddedResource Remove="icon\**" />
+    <EmbeddedResource Remove="lib\**" />
     <None Remove="examples\**" />
+    <None Remove="icon\**" />
+    <None Remove="lib\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".gitignore" />
+    <None Remove="LICENSE.txt" />
+    <None Remove="README.md" />
+    <None Remove="SharpLogger.nuspec" />
   </ItemGroup>
   
 </Project>
