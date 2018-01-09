@@ -1,8 +1,10 @@
 # SharpLogger
-A custom logging system for .NET Core 2.0, written in C#, which allows levels and filtering, with an independent output implementation.
+A custom logging system for .NET, written in C#, which allows levels and filtering, with an independent output implementation.
 
 ## Getting Started
 View the [examples](https://github.com/ramon54321/SharpLogger/tree/master/examples) page for information on a various logger setups.
+
+[Latest NuGet Package](https://www.nuget.org/packages/SharpLogger)
 
 ## Overview
 SharpLogger attempts to push you away from being stingy with what you log. I believe that it is valuable to log many things in your code, however, this often turns into a mess, when you have a cluttered log file with information regarding objects you are no longer interested in, or are not currently concerned with.
@@ -13,6 +15,9 @@ The solution is not to remove those logs, but rather filter them, to only show t
 The logger calls the printer class' Print() method, allowing you to override the class with your own handler for the log itself, meaning you are not restricted to Console.WriteLine(), or Debug.Log() for Unity, but can take the processed string from the logger and do with it what you like, including writing to a file.
 
 This also means you can use SharpLogger on slightly different environments, since you are able to control them individually, such as Unity Client and Server applications.
+
+## Contributing
+If you'd like to contribute, feel free to fork the repository. Pull requests are welcome!
 
 ## Diagrams
 #### Component Diagram
