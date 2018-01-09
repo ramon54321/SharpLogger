@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SharpLogger</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>SharpLogger</title>
     <authors>Ramon Brand</authors>
     <owners>Ramon Brand</owners>
@@ -11,7 +11,7 @@
     <iconUrl>https://github.com/ramon54321/SharpLogger/blob/master/icon/icon.png?raw=true</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Filtered logging system for .Net</description>
-    <releaseNotes>Initial release.</releaseNotes>
+    <releaseNotes>Changed target to netstandard1.0.</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>logger logging log filter filtered level</tags>
   </metadata>
