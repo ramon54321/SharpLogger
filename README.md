@@ -25,3 +25,13 @@ If you'd like to contribute, feel free to fork the repository. Pull requests are
 
 #### Class Diagram
 ![Class Diagram](http://repo.ramonbrand.ml/images/SharpLogger/ClassDiagram.jpg)
+
+## Dev Log
+### 9 Jan 2018
+Changed target runtime to NetStandard 1.0, since there is no need to restrict the library to NetCore. I am working on including a library built for Net3.5 also, since Unity does not seem to work with NetStandard libraries, and Unity is certainly required to be compatible.
+
+Opened a question [here on Unity.com/questions](https://answers.unity.com/questions/1452392/why-are-netstandard-10-libraries-not-working.html), to see if I can get some answers regarding the issue with Unity and NetStandard libraries.
+
+For now the release and the NuGet package will include both NetStandard and Net3.5 dlls.
+
+Thinking also of changing the filtering system somewhat, to ensure consistent wording is used. I have noticed an issue sometimes arrises where I sometimes set the filter to be "NetworkManager.Objects" and sometimes "NetworkManager.Object" as an example, without noticing the plural on one of them, and this then causing issues later in the filter. Possibly a sort of enum, or some form of filter tracking is needed.
