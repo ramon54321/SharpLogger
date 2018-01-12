@@ -1,5 +1,12 @@
 ![Logo](https://raw.githubusercontent.com/ramon54321/SharpLogger/master/icon/Wide@0.5x-100.jpg)
 
+## Latest NuGet Release
+[![NuGet](https://img.shields.io/nuget/v/SharpLogger.svg?style=for-the-badge)](https://www.nuget.org/packages/SharpLogger/)
+[![NuGet](https://img.shields.io/nuget/dt/SharpLogger.svg?style=for-the-badge)](https://www.nuget.org/packages/SharpLogger/)
+
+## Latest GitHub Release
+[![GitHub release](https://img.shields.io/github/release/ramon54321/SharpLogger.svg?style=for-the-badge)](https://github.com/ramon54321/SharpLogger/releases)
+
 # SharpLogger
 A custom logging system for .NET, written in C#, which allows levels and filtering, with an independent output implementation.
 
