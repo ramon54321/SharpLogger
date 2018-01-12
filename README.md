@@ -1,3 +1,5 @@
+![Logo](https://raw.githubusercontent.com/ramon54321/SharpLogger/master/icon/Wide@0.5x-100.jpg)
+
 # SharpLogger
 A custom logging system for .NET, written in C#, which allows levels and filtering, with an independent output implementation.
 
