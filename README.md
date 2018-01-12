@@ -11,7 +11,7 @@
 A custom logging system for .NET, written in C#, which allows levels and filtering, with an independent output implementation.
 
 ## Getting Started
-View the [examples](https://github.com/ramon54321/SharpLogger/tree/master/examples) page for information on a various logger setups.
+View the [examples](https://github.com/ramon54321/SharpLogger/tree/master/examples) page for information on various logger setups.
 
 [Latest NuGet Package](https://www.nuget.org/packages/SharpLogger)
 
