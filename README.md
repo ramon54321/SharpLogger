@@ -30,7 +30,7 @@ If you'd like to contribute, feel free to fork the repository. Pull requests are
 ### 12 Jan 2018
 There seems to be an issue with msbuild using the Net35 assemblies, so in order to package the NuGet package with dotnet, there is an override added to the csproj file.
 
-The [latest release 1.0.4 on NuGet](https://www.nuget.org/packages/SharpLogger/1.0.4) or the [latest release 1.0.4 on GitHub](https://github.com/ramon54321/SharpLogger/releases/tag/v1.0.4) includes dlls for NetStandard 1.0, Net35 and Net4. If you are using Unity, use the Net35 dlls.
+The [latest release 1.0.5 on NuGet](https://www.nuget.org/packages/SharpLogger/1.0.5) or the [latest release 1.0.5 on GitHub](https://github.com/ramon54321/SharpLogger/releases/tag/v1.0.5) includes dlls for NetStandard 1.0, Net35 and Net4. If you are using Unity, use the Net35 dlls.
 
 ### 9 Jan 2018
 Changed target runtime to NetStandard 1.0, since there is no need to restrict the library to NetCore. I am working on including a library built for Net3.5 also, since Unity does not seem to work with NetStandard libraries, and Unity is certainly required to be compatible.
