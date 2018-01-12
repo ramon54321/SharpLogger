@@ -1,8 +1,10 @@
 # SharpLogger
-A custom logging system for .NET Core 2.0, written in C#, which allows levels and filtering, with an independent output implementation.
+A custom logging system for .NET, written in C#, which allows levels and filtering, with an independent output implementation.
 
 ## Getting Started
 View the [examples](https://github.com/ramon54321/SharpLogger/tree/master/examples) page for information on a various logger setups.
+
+[Latest NuGet Package](https://www.nuget.org/packages/SharpLogger)
 
 ## Overview
 SharpLogger attempts to push you away from being stingy with what you log. I believe that it is valuable to log many things in your code, however, this often turns into a mess, when you have a cluttered log file with information regarding objects you are no longer interested in, or are not currently concerned with.
@@ -14,9 +16,22 @@ The logger calls the printer class' Print() method, allowing you to override the
 
 This also means you can use SharpLogger on slightly different environments, since you are able to control them individually, such as Unity Client and Server applications.
 
+## Contributing
+If you'd like to contribute, feel free to fork the repository. Pull requests are welcome!
+
 ## Diagrams
 #### Component Diagram
 ![Component Diagram](http://repo.ramonbrand.ml/images/SharpLogger/ComponentDiagram.jpg)
 
 #### Class Diagram
 ![Class Diagram](http://repo.ramonbrand.ml/images/SharpLogger/ClassDiagram.jpg)
+
+## Dev Log
+### 9 Jan 2018
+Changed target runtime to NetStandard 1.0, since there is no need to restrict the library to NetCore. I am working on including a library built for Net3.5 also, since Unity does not seem to work with NetStandard libraries, and Unity is certainly required to be compatible.
+
+Opened a question [here on Unity.com/questions](https://answers.unity.com/questions/1452392/why-are-netstandard-10-libraries-not-working.html), to see if I can get some answers regarding the issue with Unity and NetStandard libraries.
+
+For now the release and the NuGet package will include both NetStandard and Net3.5 dlls.
+
+Thinking also of changing the filtering system somewhat, to ensure consistent wording is used. I have noticed an issue sometimes arrises where I sometimes set the filter to be "NetworkManager.Objects" and sometimes "NetworkManager.Object" as an example, without noticing the plural on one of them, and this then causing issues later in the filter. Possibly a sort of enum, or some form of filter tracking is needed.
